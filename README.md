@@ -62,8 +62,9 @@ jkami是对jdbc轻量级的封装，不需要第三方jar包 实现 类似Hibern
 ### 接口定义[IUserDao.java]
     
     @KaMiDao
-	 @ResultType(User.class)
-	 public interface IUserDao{
+	 @ResultType(User.class)//默认查询返回类型
+	 //继承接口提供单表的增删改查操作
+	 public interface IUserDao extends KaMiDaoInterface<User>{
 	 
 	    User findUserByMobile(@Param("tel") Long mobile);
 	     
