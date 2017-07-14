@@ -129,5 +129,5 @@ jkami是对jdbc轻量级的封装，不需要第三方jar包 实现 类似Hibern
 	insert into tb_user_order(name,user_id,create_date) values('${os.name}',${os.user.id!os.userId},'${os.createDate?string("yyyy-MM-dd HH:mm:ss")}');
 	</#list>
 
-### 测试代码
- https://github.com/lftao/jkami-demo
+### code
+ https://github.com/lftao/jkami
